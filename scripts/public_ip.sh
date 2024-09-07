@@ -62,7 +62,7 @@ public_ip_helper() {
 
 	# if cache file is missing or is older than 60 seconds, then refresh
 	if is_osx; then
-		if [[ ! -f "$cache" || $(( $(date +%s) - $(stat -t %s -f %m -- "$cache") )) -gt $refresh ]]; then
+		if [[ ! -f "$cache" || $(( $(date +%s) - $(gstat -L --format %Y "$cache") )) -gt $refresh ]]; then
 			curl -s "$_PIP_URL" -o "$cache"
 		fi
 	else
