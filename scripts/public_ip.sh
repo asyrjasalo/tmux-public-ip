@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 PLUGIN_DIR=$(tmux show-option -gqv "@public_ip_plugin_dir")
 source "$PLUGIN_DIR/scripts/helpers.sh"
 

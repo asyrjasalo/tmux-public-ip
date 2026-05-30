@@ -7,7 +7,7 @@ source "$CURRENT_DIR/scripts/helpers.sh"
 
 interpolate() {
 	local interpolated="$1"
-	echo "$interpolated" |  sed -e "s|#{public_ip\([^}]*\)}|#(sh $CURRENT_DIR/scripts/public_ip.sh \1)|g"
+	echo "$interpolated" |  sed -e "s|#{public_ip\([^}]*\)}|#(bash $CURRENT_DIR/scripts/public_ip.sh \1)|g"
 }
 
 
