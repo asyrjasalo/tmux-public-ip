@@ -8,7 +8,7 @@ pip_dir_option="@public_ip_dir"
 pip_tmp_file_default="info.json"
 pip_tmp_file_option="@public_ip_tmp_file"
 
-pip_json_url_default="https://ifconfig.co/json"
+pip_json_url_default="https://ipinfo.io/json"
 pip_json_url_option="@public_ip_json_url"
 
 pip_refresh_default="60"
